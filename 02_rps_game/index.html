@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="rps.css">
+    <title>Rock-Scissors-Paper</title>
+</head>
+<body>
+    <div class="container">
+        <h1>가위 바위 보</h1>
+        <div class="palyer-section">
+            <div class="gameboard-container">
+                <div class="gameboard-item">
+                    <div>플레이어</div>
+                    <div id="player1-score">0</div>
+                </div>
+                <div>
+                    <img id="player1-img" src="/img/question.jpg" />
+                </div>
+            </div>
+            <div class="score-vs">VS</div>
+            <div class="gameboard-container">
+                <div class="gameboard-item">
+                    <div id="player2-score">0</div>
+                    <div>컴퓨터</div>
+                </div>
+                <div>
+                    <img id="player2-img" src="/img/question.jpg" />
+                </div>
+            </div>
+        </div>
+        <div id="rps-section">
+            <div id="rps-btn-selection">
+                <div id="click-count">남은 횟수 : 10</div>
+                <div class="rps-btn">
+                    <button onclick="playRPS('scissors')">가위</button>
+                    <button onclick="playRPS('rock')">바위</button>
+                    <button onclick="playRPS('paper')">보</button>
+                </div>
+                <div class="click-result"></div>
+            </div>
+            <div id="rps-result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
