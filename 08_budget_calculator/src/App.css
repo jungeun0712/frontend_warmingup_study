@@ -1,0 +1,17 @@
+.container {
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+.item {
+  background: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid skyblue;
+}
+
+.budget-list {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
