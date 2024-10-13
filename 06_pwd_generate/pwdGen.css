@@ -1,0 +1,35 @@
+body {
+    /* font-family: 'Pretendard'; */
+    --bs-body-font-family: Pretendard;
+}
+
+.index {
+    counter-reset: index;
+    list-style-type: none;
+    padding: 5px 0px 0px 0px;
+    margin: 0;
+    font-size: small;
+}
+.index_item {
+    list-style-type: none;
+}
+.index_item::before {
+    counter-increment: index;
+    content: counters(index, '.')  '. ';
+}
+
+.clipboard-icon:hover {
+    color: #559bc9;
+    cursor: pointer;
+}
+
+svg {
+    width: 15px; 
+    height: 15px; 
+    margin-bottom: 66px;
+}
+
+.pwd-container {
+    background-color: #eee5cd; 
+    border-radius: 5px;
+}
